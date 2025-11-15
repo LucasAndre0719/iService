@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0; 
+    position: relative;
+    overflow: hidden;
+}
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    background: url('../img/Captura\ de\ tela\ 2025-11-08\ 151831.png') no-repeat center center/cover;
+    filter: brightness(60%) contrast(120%); 
+    z-index: -1; 
+}
+
+
+.header-tag {
+    position: absolute;
+    top: 10%; 
+    left: 20%;
+    transform: translateX(-150%); 
+    background-color: #00CC66; 
+    color: white;
+    padding: 10px 35px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+
+.form-container {
+    background-color: #00AA55; 
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px; 
+    box-sizing: border-box;
+}
+
+.form-title {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+/* Estilos dos Inputs */
+input[type="text"], 
+input[type="email"], 
+input[type="tel"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    outline: none;
+}
+
+
+.input-group-row {
+    display: flex;
+    gap: 10px; 
+    margin-bottom: 5px;
+}
+.input-group-row input {
+    flex: 1; 
+    margin-bottom: 0; 
+}
+
+.security-check {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.security-check input[type="checkbox"] {
+    margin-right: 10px;
+
+    width: 16px;
+    height: 16px;
+    accent-color: white; 
+}
+.security-check label {
+    color: white;
+    font-size: 0.9em;
+}
+
+
+.agenda-button {
+    background-color: white;
+    color: #00AA55; 
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 150px; 
+    display: block;
+    margin-left: auto; 
+    transition: background-color 0.3s;
+}
+.agenda-button:hover {
+    background-color: #f0f0f0;
+}
+
+
+@media (max-width: 600px) {
+    .header-tag {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .form-container {
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+    .input-group-row {
+        flex-direction: column; 
+        gap: 0;
+    }
+    .input-group-row input {
+        margin-bottom: 15px;
+    }
+    .agenda-button {
+        width: 100%;
+        margin-right: auto;
+    }
+}
