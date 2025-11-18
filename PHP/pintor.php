@@ -17,15 +17,15 @@
         
         <div class="form-container">
             <h2 class="form-title">Agendamento</h2>
-            <form>
+            <form action="usuarios.php" method="POST">
                 <div class="input-group-row">
-                    <input type="text" placeholder="nome" required>
-                    <input type="text" placeholder="sobrenome" required>
+                    <input type="text" name="nome" placeholder="nome" required>
+                    <input type="text" name="sobrenome" placeholder="sobrenome" required>
                 </div>
                 
-                <input type="email" placeholder="E-mail" class="full-width-input" required>
+                <input type="email" name="email" placeholder="E-mail" class="full-width-input" required>
                 
-                <input type="tel" placeholder="número" class="full-width-input" required>
+                <input type="tel" name="numero" placeholder="número" class="full-width-input" required>
                 
                 <div class="security-check">
                     <input type="checkbox" id="seguranca" required>

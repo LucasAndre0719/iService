@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -18,15 +17,15 @@
 
     <div class="form-container">
         <h2 class="form-title">Agendamento</h2>
-        <form>
+        <form action="usuarios.php" method="post">
             <div class="input-group-row">
-                <input type="text" placeholder="nome" required>
-                <input type="text" placeholder="sobrenome" required>
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="text" name="sobrenome" placeholder="Sobrenome" required>
             </div>
             
-            <input type="email" placeholder="E-mail" class="full-width-input" required>
+            <input type="email" name="email" placeholder="E-mail" class="full-width-input" required>
             
-            <input type="tel" placeholder="número" class="full-width-input" required>
+            <input type="tel" name="numero" placeholder="Número" class="full-width-input" required>
             
             <div class="security-check">
                 <input type="checkbox" id="seguranca" required>
