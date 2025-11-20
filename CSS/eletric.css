@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #f0f0f0; 
     position: relative;
     overflow: hidden;
 }
@@ -15,7 +16,7 @@ body {
     left: 0;
     width: 110%;
     height: 100%;
-    background-image: url('../Img/encana2.png.png');
+    background: url('../Img/eletric.png.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

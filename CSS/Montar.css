@@ -6,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #f0f0f0; 
     position: relative;
     overflow: hidden;
 }
@@ -15,8 +16,8 @@ body {
     left: 0;
     width: 110%;
     height: 100%;
-    background-image: url('../Img/encana2.png.png');
-    background-size: cover;
+    background: url('../Img/Montar.png.webp');
+      background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(60%) contrast(120%); 
@@ -27,7 +28,7 @@ body {
 .header-tag {
     position: absolute;
     top: 10%; 
-    left: 20%;
+    left: 30%;
     transform: translateX(-150%); 
     background-color: #00CC66; 
     color: white;

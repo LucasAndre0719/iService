@@ -16,7 +16,10 @@ body {
     left: 0;
     width: 110%;
     height: 100%;
-    background: url('../img/Captura\ de\ tela\ 2025-11-08\ 151831.png') no-repeat center center/cover;
+    background-image: url('../Img/faxina2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     filter: brightness(60%) contrast(120%); 
     z-index: -1; 
 }
@@ -25,7 +28,7 @@ body {
 .header-tag {
     position: absolute;
     top: 10%; 
-    left: 20%;
+    left: 30%;
     transform: translateX(-150%); 
     background-color: #00CC66; 
     color: white;
