@@ -102,7 +102,7 @@ input[type="tel"] {
 }
 
 
-.agenda-button {
+.btn {
     background-color: white;
     color: #00AA55; 
     padding: 12px 20px;
@@ -116,7 +116,7 @@ input[type="tel"] {
     margin-left: auto; 
     transition: background-color 0.3s;
 }
-.agenda-button:hover {
+.btn:hover {
     background-color: #f0f0f0;
 }
 
@@ -138,7 +138,7 @@ input[type="tel"] {
     .input-group-row input {
         margin-bottom: 15px;
     }
-    .agenda-button {
+    .btn {
         width: 100%;
         margin-right: auto;
     }
