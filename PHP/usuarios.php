@@ -1,20 +1,36 @@
 <?php
-echo"ok";
+
+require("conecctor.php"); 
 
 
-    require("conexão.php");
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-if(isset($_POST)){
-    $nome = $_POST['nome'];
-    $sobrenome = $_POST['sobrenome'];
-    $numero = $_POST['numero'];
-    $email = $_POST['email'];
+    $nome = trim($_POST["nome"]);
+    $sobrenome = trim($_POST["sobrenome"]);
+    $email = trim($_POST["email"]);
+    $numero = $_POST["numero"];
 
-    $query = "INSERT INTO tblusuarios (nome,sobrenome,numero,email) VALUES ('$nome','$sobrenome','$numero','$email')";
 
-    $stmt =  $pdo->prepare($query);
-    $stmt->execute();
+    $query = "INSERT INTO usuarios (nome, sobrenome, email, numero) 
+              VALUES (?, ?, ?, ?)";
+    
+    try {
+        $stmt = $pdo->prepare($query);
+ 
+        $stmt->execute([$nome, $sobrenome, $email, $numero]); 
+        
+        echo "Usuário **cadastrado** com sucesso!";
 
-    echo"PESSOA CADASTRADA COM SUCESSO!";
+    } catch (\PDOException $e) {
+        if ($e->getCode() == 23000) {
+            echo "Erro: Este **e-mail já está cadastrado**.";
+        } else {
+
+            echo "Erro ao cadastrar. Detalhes: " . $e->getMessage();
+        }
+    }
+
+} else {
+    
 }
 ?>
